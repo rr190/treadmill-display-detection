@@ -8,8 +8,8 @@ st.title('Gym Tracker')
 st.write("Record Your Miles!")
 
 #Get Image Data
-# buf = st.camera_input("Take a picture!")
-buf = st.file_uploader("Choose a file")
+buf = st.camera_input("Take a picture!")
+# buf = st.file_uploader("Choose a file")
 
 #Predict
 if buf is not None:
