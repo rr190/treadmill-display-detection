@@ -6,6 +6,7 @@ from ultralytics import YOLO
 from PIL import Image
 from util import get_img, return_pred, return_board, return_nums, combine_labels, reshape
 import streamlit_authenticator as stauth
+import cv2
 
 st.title('Gym Tracker')
 st.write("Record Your Miles!")
