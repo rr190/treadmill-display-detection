@@ -3,6 +3,7 @@ import streamlit as st
 # from pymongo.server_api import ServerApi
 from ultralytics import YOLO
 from util import get_img, return_pred, return_board, return_nums, combine_labels, reshape
+import dill
 
 st.title('Gym Tracker')
 st.write("Record Your Miles!")
