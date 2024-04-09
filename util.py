@@ -91,10 +91,7 @@ def return_nums(numbers, board):
         prevx1 = x1
         prevy1 = y1
         unique_list.append(sorted_list[i])
-    print(mean_width, total_i)
-    
     mean_width /= total_i
-    print(mean_width)
     # Put spacings respectively
     prevx = 0
     prevy = 0
@@ -141,7 +138,6 @@ def combine_labels(labels):
 
 def reshape(num, maxm, minm):
     num = float(num)
-    print(num, maxm, minm)
     if num > maxm:
         while num > maxm:
             num /= 10

@@ -22,8 +22,6 @@ if buf is not None:
     board = return_board(boards)
     combined_nums = return_nums(numbers, board)
     combined_labels = combine_labels(labels)
-    print(combined_labels)
-    print(combined_nums)
 
     col1, col2 = st.columns(2)
     labels = ["Time", "Calories", "Distance", "Pace","Speed", "Incline", "Heart-Rate"]
