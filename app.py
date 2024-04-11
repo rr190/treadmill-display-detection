@@ -9,8 +9,12 @@ st.title('Gym Tracker')
 st.write("Record Your Miles!")
 
 #Get Image Data
-# buf = st.camera_input("Take a picture!")
-buf = st.file_uploader("Choose a file")
+camera_toggle = st.toggle("Take a picture!")
+if camera_toggle:
+    buf = st.camera_input("Take a picture!")
+upload_toggle = st.toggle("Choose a file")
+if upload_toggle:
+    buf = st.file_uploader("Choose a file")
 
 #Predict
 if buf is not None:
