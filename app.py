@@ -10,6 +10,7 @@ st.write("Record Your Miles!")
 
 #Get Image Data
 camera_toggle = st.toggle("Take a picture!")
+buf = None
 if camera_toggle:
     buf = st.camera_input("Take a picture!")
 upload_toggle = st.toggle("Choose a file")
