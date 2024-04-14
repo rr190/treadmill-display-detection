@@ -3,7 +3,7 @@ Here is the link: https://treadmill-display-detection.streamlit.app/
 This Gym Tracker uses a trained Yolov8 model to detect and automatically log data from a treadmill display board. This auto retrieval can easen up your fitness tracking.
 
 ### Collecting Data
-- I used the dataset with 32 images that I took at my gym and used roboflow to augment the data. 
+- I used the dataset with 32 images that I took at my gym and used Roboflow to augment the data. 
     - https://universe.roboflow.com/jr-s-nxihj/treadmill-display-detection 
 - I used many different labels for the numbers (1 - 10) and display labels (Calories, Incline, etc.) and the 11-segment display board (which is where the numbers are at).
 
