@@ -5,7 +5,7 @@ import sys
 from ultralytics import YOLO
 import dill
 
-sys.path.insert(0, "/Users/simcs/Documents/Jia Ru/CS/Projects/ML/Object Detection/gym-tracker/treadmill-display-detection/pages/helper")
+sys.path.insert(0, "pages/helper")
 from util import get_img, return_pred, return_board, return_nums, combine_labels, reshape
 
  
@@ -24,7 +24,7 @@ if upload_toggle:
 
 #Predict
 if buf is not None:
-    model = YOLO("best3.pt")
+    model = YOLO("weights/best3.pt")
     img = get_img(buf)
 
     #Retrieve Predicted Data
