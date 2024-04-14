@@ -1,9 +1,6 @@
 import streamlit as st
 import sys
-# import pymongo
-# from pymongo.server_api import ServerApi
 from ultralytics import YOLO
-import dill
 
 sys.path.insert(0, "pages/helper")
 from util import get_img, return_pred, return_board, return_nums, combine_labels, reshape
@@ -35,7 +32,7 @@ if buf is not None:
 
     col1, col2 = st.columns(2)
     labels = ["Time", "Calories", "Distance", "Pace","Speed", "Incline", "Heart-Rate"]
-    num_restrain = [(100, 0), (1000, 0), (10, 0), (100, 0), (30, 0), (100, 0), (1000, 10)]
+    num_restrain = [(100, 0), (999, 0), (100, 0), (100, 0), (30, 0), (15, 0), (300, 10)]
     # max_len = max(len(combined_labels),len(combined_nums)) 
     #Turn into a table and graph
     with col1:
