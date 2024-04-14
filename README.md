@@ -1,1 +1,1 @@
-# treadmill-display-detection
+This gym Tracker uses a trained Yolov8 model to detect and automatically log data from a treadmill display board. This auto retrieval can easen up your fitness tracking.

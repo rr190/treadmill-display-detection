@@ -1,19 +1,24 @@
 import streamlit as st
+import sys
 # import pymongo
 # from pymongo.server_api import ServerApi
 from ultralytics import YOLO
-from util import get_img, return_pred, return_board, return_nums, combine_labels, reshape
 import dill
 
+sys.path.insert(0, "/Users/simcs/Documents/Jia Ru/CS/Projects/ML/Object Detection/gym-tracker/treadmill-display-detection/pages/helper")
+from util import get_img, return_pred, return_board, return_nums, combine_labels, reshape
+
+ 
 st.title('Gym Tracker')
 st.write("Record Your Miles!")
 
 #Get Image Data
 camera_toggle = st.toggle("Take a picture!")
+upload_toggle = st.toggle("Choose a file")
+
 buf = None
 if camera_toggle:
     buf = st.camera_input("Take a picture!")
-upload_toggle = st.toggle("Choose a file")
 if upload_toggle:
     buf = st.file_uploader("Choose a file")
 
