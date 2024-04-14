@@ -32,7 +32,7 @@ if buf is not None:
 
     col1, col2 = st.columns(2)
     labels = ["Time", "Calories", "Distance", "Pace","Speed", "Incline", "Heart-Rate"]
-    num_restrain = [(100, 0), (999, 0), (100, 0), (100, 0), (30, 0), (15, 0), (300, 10)]
+    num_restrain = [(100, 0), (999, 0), (30, 0), (100, 0), (30, 0), (15, 0), (300, 10)]
     # max_len = max(len(combined_labels),len(combined_nums)) 
     #Turn into a table and graph
     with col1:
