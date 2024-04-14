@@ -31,5 +31,5 @@ st.markdown(
 
 st.write("## How to use (Choose a File):")
 st.write("Picture used:")
-st.image("demo.jpeg", width=200)
-st.video("demo.webm")
+st.image("demo/demo.jpeg", width=200)
+st.video("demo/demo.webm")
